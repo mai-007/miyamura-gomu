@@ -1,0 +1,20 @@
+/* 下層ページ設定 */
+
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+.p-lowerPage{
+  padding: 64px 0 215px;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+  &__section{
+    margin-bottom: 88px;
+    &__inner{
+      margin-bottom: 50px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

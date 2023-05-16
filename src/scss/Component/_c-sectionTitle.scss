@@ -1,0 +1,16 @@
+@use '../Foundations/f-base.scss' as base;
+
+.c-sectionTitle{
+  font-size: 3rem;
+  margin-bottom: 64px;
+  text-align: center;
+  &__accent{
+    color: base.$mainColor;
+  }
+  &--small{
+    @extend .c-sectionTitle;
+    font-size: 1.875rem;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+}

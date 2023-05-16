@@ -1,0 +1,40 @@
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+.l-header{
+  @include mix.flexRowCenter;
+  justify-content: space-between;
+  padding: 10px 0;
+  background: base.$mainColor;
+}
+
+.l-headerNav{
+  font-weight: 500;
+  color: #fff;
+  @include mix.flexRowCenter;
+  ul{
+    @include mix.flexRowCenter;
+  }
+  &__li{
+    padding-right: 2.4rem;
+  }
+}
+
+.l-contactBlock{
+  width: 80px;
+  height: 80px;
+  border: 1px solid #fff;
+  &:hover{
+    color: base.$mainColor;
+    background: #fff;
+  }
+  &__inner{
+    @include mix.flexColumn;
+    width: 100%;
+    height: 100%;
+    &__text{
+      padding-bottom: 10px;
+      font-size: 12px;
+    }
+  }
+}

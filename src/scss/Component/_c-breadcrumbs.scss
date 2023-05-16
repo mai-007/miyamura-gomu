@@ -1,0 +1,28 @@
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+.c-breadcrumbs{
+  @include mix.flexRowCenter;
+  margin-bottom: 60px;
+  &__list{
+    margin-right: 24px;
+    &__item{
+      @include mix.flexRowCenter;
+      &::after{
+        content: "\03e";
+        padding-left: 24px;
+      }
+    }
+    /* 余分な > を削除 */
+    &:last-of-type{
+      .c-breadcrumbs__list__item{
+        &::after{
+          content: "";
+        }
+      }
+    }
+  }
+  &__homeimage{
+    padding-right: 24px;
+  }
+}

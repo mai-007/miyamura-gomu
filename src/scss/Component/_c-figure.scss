@@ -1,0 +1,11 @@
+.c-figure{
+  width: fit-content;
+  padding: 20px;
+  border: 1px solid #707070;
+  &__caption{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.8em;
+  }
+}

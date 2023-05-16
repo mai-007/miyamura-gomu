@@ -1,0 +1,12 @@
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+.c-listRow{
+  @include mix.flexRowCenter;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  &__item{
+    margin: 0 60px 24px;
+    list-style: dot;
+  }
+}

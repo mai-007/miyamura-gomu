@@ -1,0 +1,20 @@
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+.c-contact{
+  padding: 200px 0;
+  &__inner{
+    @include mix.flexRowCenter;
+    margin-bottom: 40px;
+    &__title{
+      font-size: 70px;
+      color: base.$mainColor;
+    }
+    &__button{
+      width: 560px;
+    }
+  }
+  &__text{
+    text-align: center;
+  }
+}

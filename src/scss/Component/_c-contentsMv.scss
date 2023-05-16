@@ -1,0 +1,30 @@
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+.c-contentsMv{
+  position: relative;
+  margin-bottom: 120px;
+  &__image{
+    width: 100vw;
+    height: auto;
+  }
+  &__box{
+    @include mix.flexColumn;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: max(41.6667%,800px);
+    height: 8.75rem;
+    background: #fff;
+    &__en{
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+      letter-spacing: 0.1em;
+    }
+    &__title{
+      font-size: 2.5rem;
+      color: base.$mainColor;
+      font-weight: 500;
+    }
+  }
+}

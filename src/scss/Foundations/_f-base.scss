@@ -1,0 +1,26 @@
+
+/* font */
+body{
+  font-family: "Hiragino Kaku Gothic","Hiragino Sans",Meiryo,sans-serif;
+  font-size: 1rem;
+  position: relative;
+}
+.en{
+  font-family: 'Montserrat', sans-serif;
+}
+p{
+  line-height: 1.8em;
+  font-weight: 400;
+}
+
+/* color */
+$mainColor: #5371D2;
+$bg01: #f0f4fd;
+$gray01: #6a6a6a;
+$gray02: #A5A5A5;
+$black:  #000;
+$blueGray: #E6E9F4;
+$rad: #ff0000;
+$blue: #0000FF;
+$mainColor02: #5392D2;
+$lineColor: rgba(98,144,205,0.6);

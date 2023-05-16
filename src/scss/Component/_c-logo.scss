@@ -1,0 +1,13 @@
+@use '../Foundations/f-mixin.scss' as mix;
+
+.c-logo{
+  @include mix.flexRowCenter;
+  padding-left: 2.5rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.875rem;
+  img{
+    max-width: 86px;
+    padding-right: 1.25rem;
+  }
+}

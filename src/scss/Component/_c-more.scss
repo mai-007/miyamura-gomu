@@ -1,0 +1,25 @@
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+
+.c-more{
+  width: 100%;
+  &__inner{
+    @include mix.flexRowCenter;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    width: 15.625rem;
+    height: 3.125em;
+    font-size: 1.125rem;
+    border-radius: 1.5625rem;
+    background-color: #fff;
+    filter: drop-shadow(2px 2px 6px rgba(0,0,0,0.2));
+    &::after{
+      content: "▶︎";
+      color: base.$mainColor;
+      position: absolute;
+      right: 24px;
+    }
+  }
+}

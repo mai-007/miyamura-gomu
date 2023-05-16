@@ -1,0 +1,22 @@
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+.c-company{
+  background: base.$bg01;
+  &__item{
+    position: relative;
+    width: calc(50% - 60px);
+    margin-bottom: 60px;
+    &__title{
+      position: absolute;
+      top:0;
+      left: 0;
+      @include mix.flexColumn;
+      width: min(76.5385%,398px);
+      height: 95px;
+      background: base.$mainColor;
+      font-size: 2rem;
+      color: #fff;
+    }
+  }
+}

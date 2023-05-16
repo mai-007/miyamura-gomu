@@ -1,0 +1,31 @@
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+.c-list{
+  margin-bottom: 72px;
+  &__item{
+    @include mix.flexRowCenter;
+    justify-content: space-between;
+    border-bottom: 1px solid base.$mainColor;
+    margin-bottom: 48px;
+    padding-bottom: 12px;
+    &::after{
+      content: '>';
+      color: base.$mainColor;
+      padding-right: 12px;
+    }
+    .c-list__item__inner{
+      @include mix.flexRowCenter;
+      justify-content: space-between;
+    }
+    .c-date{
+      display: inline-block;
+      color: base.$gray01;
+      font-weight: normal;
+      margin-right: 30px;
+    }
+    .c-text{
+      display: inline-block;
+    }
+  }
+}

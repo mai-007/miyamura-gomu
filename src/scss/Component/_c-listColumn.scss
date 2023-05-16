@@ -1,0 +1,12 @@
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+.c-listColumn{
+  @include mix.flexColumnStart;
+  max-height: 18.75rem;
+  flex-wrap: wrap;
+  &__list{
+    margin: 0 4rem 1.5rem 0;
+    font-weight: 200;
+  }
+}

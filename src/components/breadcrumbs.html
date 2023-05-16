@@ -1,0 +1,43 @@
+<ul class="c-breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+  <!-- 1つめ -->
+  <li class="c-breadcrumbs__list" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem">
+    <a class="c-breadcrumbs__list__item" itemprop="item" href="ホームのURL">
+        <img class="c-breadcrumbs__homeimage" src="../images/common/icon/home.svg">
+        <span itemprop="name">ホーム</span>
+    </a>
+    <meta itemprop="position" content="1" />
+  </li>
+{{#if pageTitle_01}}
+  <!-- 2つめ -->
+  <li class="c-breadcrumbs__list" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem">
+    <a class="c-breadcrumbs__list__item" itemprop="item" href="カテゴリーのURL">
+        <span itemprop="name">{{pageTitle_01}}</span>
+    </a>
+    <meta itemprop="position" content="2" />
+  </li>
+{{/if}}
+
+{{#if pageTitle_02}}
+  <!-- 3つめ -->
+  <li class="c-breadcrumbs__list" itemprop="itemListElement" itemscope
+      itemtype="https://schema.org/ListItem">
+    <a class="c-breadcrumbs__list__item" itemprop="item" href="子カテゴリーのURL">
+        <span itemprop="name">{{pageTitle_02}}</span>
+    </a>
+    <meta itemprop="position" content="3" />
+  </li>
+{{/if}}
+
+{{#if pageTitle_03}}
+  <!-- 4つめ -->
+    <li class="c-breadcrumbs__list" itemprop="itemListElement" itemscope
+    itemtype="https://schema.org/ListItem">
+  <a class="c-breadcrumbs__list__item" itemprop="item" href="子カテゴリーのURL">
+      <span itemprop="name">{{pageTitle_03}}</span>
+  </a>
+  <meta itemprop="position" content="3" />
+</li>
+{{/if}}
+</ul>

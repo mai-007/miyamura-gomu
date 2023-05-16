@@ -1,0 +1,21 @@
+.l-container{
+  max-width: 1380px;
+  margin: 0 auto;
+  &--full{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  &--1300{
+    width: 1300px;
+    margin: 0 auto;
+  }
+  &--m{
+    width: 1100px;
+    margin: 0 auto;
+  }
+  &--s{
+    width: 980px;
+    margin: 0 auto;
+  }
+}

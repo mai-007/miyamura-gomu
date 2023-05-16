@@ -1,0 +1,30 @@
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+
+.c-location{
+  line-height: 1.5em;
+  &__place{
+    display: inline-block;
+    margin-bottom: 18px;
+  }
+  &__contact{
+    @include mix.flexRowCenter;
+    &__tel {
+      padding-right: 14px;
+      text-decoration: underline;
+      a{
+        @include mix.flexRowCenter;
+        img{
+          padding-right: 6px;
+        }
+      }
+    }
+    &__fax {
+      @include mix.flexRowCenter;
+      img{
+        padding-right: 6px;
+      }
+    }
+  }
+}

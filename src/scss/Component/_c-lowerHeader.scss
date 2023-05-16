@@ -1,0 +1,20 @@
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+.c-lowerHeader{
+  width: 100%;
+  margin-bottom: 32px;
+  background: url('https://placehold.jp/999/ffffff/1920x250.png?text=57');
+  &__inner{
+    padding: 64px 0 ;
+    color: #fff;
+    text-shadow: 0 3px 3px rgba(0,0,0,0.1);
+    &__title{
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    &__subTitle{
+      font-size: 1.5rem;
+    }
+  }
+}

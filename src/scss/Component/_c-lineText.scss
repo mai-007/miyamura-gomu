@@ -1,0 +1,19 @@
+@use '../Foundations/f-base' as base;
+
+.c-lineText{
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+    &__text{
+      width: fit-content;
+      margin: 0 auto 1.75rem;
+      font-size: 1.75rem;
+      font-weight: 600;
+      background: linear-gradient(transparent 60%,base.$lineColor 30%);
+    }
+    p{
+      font-size: 1.5rem;
+      line-height: 1.8em;
+    }
+}

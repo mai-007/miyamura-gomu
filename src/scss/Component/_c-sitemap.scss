@@ -1,0 +1,26 @@
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+.c-sitemap{
+  @include mix.flexRowToColumn;
+  justify-content: flex-start;
+  &__unity{
+    margin-right: 104px;
+    &__item{
+      @include mix.flexColumn;
+      margin-bottom: 50px;
+      align-items: flex-start;
+      &__parent{
+        margin-bottom: 24px;
+        font-weight: 600;
+      }
+      &__child{
+        font-weight: 200;
+        margin-bottom: 14px;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
