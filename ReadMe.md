@@ -1,5 +1,15 @@
 # vite frontEndDevEnvironment
 
+Viteでプレーンなhtml制作パッケージ
+EjsではなくHandlebars使用
+
+詳細
+https://coding-memo.work/development/1274/
+
+
+## issue
+230626.componentのimageパスが[asset./]にならない。
+
 ## what this can do
 - HTMLをEjs風に記載
 - Sassコンパイル
@@ -25,4 +35,3 @@
 
 コメントアウト: {{!コメント}}
 [コメントアウトのリファレンス](https://handlebarsjs.com/guide/#template-comments)
-
