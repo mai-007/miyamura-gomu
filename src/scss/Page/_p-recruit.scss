@@ -1,0 +1,54 @@
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+
+  .p-recruitBox{
+    padding: 45px 60px;
+    border: 1px solid #000;
+    @include mix.mq(sp){
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  .p-recruitVoice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mix.mq(sp){
+      align-items: flex-start;
+      margin-bottom: 24px;
+    }
+    &__inner{
+      width: 80%;
+      @include mix.mq(1000){
+        width: 64%;
+      }
+      @include mix.mq(sp){
+        width: calc(55% - 10px);
+        align-items: start;
+        font-size: 10px;
+      }
+      p:nth-of-type(3n){
+        margin-bottom: 8px;
+      }
+      .c-borderTitle--blue{
+        font-size: 16px;
+        @include mix.mq(sp) {
+          font-size: 0.625rem;
+          margin-bottom: 8px;
+        }
+      }
+      .u-fwBold{
+        font-weight: 600;
+      }
+    }
+    &__image{
+      @include mix.mq(sp){
+        width: 140px;
+        height: 185px;
+      }
+    }
+    &__table{
+      overflow: auto;
+    }
+  }

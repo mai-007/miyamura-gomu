@@ -16,15 +16,30 @@
     width: max(41.6667%,800px);
     height: 8.75rem;
     background: #fff;
-    &__en{
+    @include mix.mq(tab){
+      display: block;
+      position: relative;
+      width: calc(100% - 35px);
+      height: auto;
+      padding: 1rem;
+      margin-top: -100px;
+      background: #fff;
+    }
+    &__subTitle--en{
       margin-bottom: 0.5rem;
       font-size: 1.5rem;
       letter-spacing: 0.1em;
+      @include mix.mq(tab){
+        font-size: 0.625rem;
+      }
     }
     &__title{
       font-size: 2.5rem;
       color: base.$mainColor;
       font-weight: 500;
+      @include mix.mq(tab){
+        font-size: 1rem;
+      }
     }
   }
 }

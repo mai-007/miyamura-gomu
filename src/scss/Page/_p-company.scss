@@ -2,11 +2,21 @@
 @use '../Foundations/f-mixin.scss' as mix;
 
 .p-company{
+  /* js-tab-item */
+  .js-tab-item{
+    display: none;
+    &.show{
+      display: block;
+    }
+  }
   .p-greetingImage{
     position: relative;
     text-align: center;
     height: 420px;
     margin-bottom: 40px;
+    @include mix.mq(sp) {
+      height: auto;
+    }
     &__image{
       width: 1100px;
       height: 420px;
@@ -14,6 +24,14 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
+      @include mix.mq(sp) {
+        position: unset;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4/3;
+        transform: translateX(0);
+        margin-bottom: 20px;
+      }
     }
     &__text{
       position: absolute;
@@ -23,9 +41,31 @@
       display: inline-block;
       margin-left: 40px;
       text-align: left;
+      @include mix.mq(sp) {
+        position: unset;
+        display: block;
+        margin: 0 0 0 auto;
+        width: fit-content;
+        text-align: left;
+        p{
+          margin-bottom: 0;
+          &:nth-of-type(1){
+            font-size: 0.625rem;
+          }
+          &:nth-of-type(2){
+            font-size: 0.75rem;
+          }
+          &:nth-of-type(3){
+            font-size: 1.375rem;
+          }
+        }
+      }
     }
   }
   .p-greetingMessage{
     margin-bottom: 1.5em;
+    @include mix.mq(sp) {
+      font-size: 0.875rem;
+    }
   }
 }

@@ -1,27 +1,43 @@
-@use '../Foundations/f-base' as base;
-@use '../Foundations/f-mixin.scss' as mix;
+@use "../Foundations/f-base" as base;
+@use "../Foundations/f-mixin.scss" as mix;
 
-.c-imageWrap{
+.c-imageWrap {
   @include mix.flexRowCenter;
-  justify-content: safe;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 35px;
+  @include mix.mq(1000) {
+    justify-content: center;
+  }
 }
 
-.c-image{
+.c-image {
   width: 100%;
   padding: 40px 0;
-  &--fullx500{
+  &--fullx500 {
     @extend .c-image;
     height: 500px;
+    @include mix.mq(sp) {
+      height: 250px;
+    }
   }
-  &--s{
+  &--s {
     width: 410px;
     height: 275px;
     margin-bottom: 40px;
     position: relative;
+    @include mix.mq(sp) {
+      height: 250px;
+    }
   }
-  &__title{
+  &--twocolumn {
+    width: calc((100% - 40px) / 2);
+    @include mix.mq(sp) {
+      width: calc((100% - 20px) / 2);
+      aspect-ratio: 4/3;
+    }
+  }
+  &__title {
     @include mix.flexRowCenter;
     justify-content: center;
     position: absolute;
@@ -31,7 +47,7 @@
     color: #fff;
     background: base.$mainColor;
   }
-  &__text{
+  &__text {
     font-weight: 600;
   }
 }

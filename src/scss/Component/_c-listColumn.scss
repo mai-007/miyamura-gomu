@@ -1,12 +1,25 @@
-@use '../Foundations/f-base' as base;
-@use '../Foundations/f-mixin.scss' as mix;
+@use "../Foundations/f-base" as base;
+@use "../Foundations/f-mixin.scss" as mix;
 
-.c-listColumn{
+.c-listColumn {
   @include mix.flexColumnStart;
   max-height: 18.75rem;
   flex-wrap: wrap;
-  &__list{
+  @include mix.mq(sp) {
+    max-height: 20rem;
+  }
+  &__list {
     margin: 0 4rem 1.5rem 0;
     font-weight: 200;
+    @include mix.mq(1000) {
+      font-size: 0.875rem;
+    }
+    @include mix.mq(tab) {
+      margin: 0 1rem 1.5rem 0;
+    }
+    @include mix.mq(sp) {
+      font-size: 0.625rem;
+      margin: 0 2rem 0.625rem 0;
+    }
   }
 }

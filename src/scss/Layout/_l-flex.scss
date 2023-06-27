@@ -3,6 +3,9 @@
 
 .l-flexRowToColumn{
   @include mix.flexRowToColumn;
+  @include mix.mq(sp){
+    flex-direction: column;
+  }
 }
 .l-flex{
   @include mix.flexRowCenter;

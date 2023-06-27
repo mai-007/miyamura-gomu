@@ -1,3 +1,18 @@
+/* mediaQuery */
+$breakpoint:(
+  pc: 'screen and (max-width:1379px)',
+  1000: 'screen and (max-width:1000px)',
+  tab: 'screen and (max-width:799px)',
+  sp: 'screen and (max-width:599px)',
+);
+
+@mixin mq($bp){
+  @media #{map-get($breakpoint,$bp)}{
+    @content;
+  }
+}
+
+/* flex */
 @mixin flexRowCenter{
   display: flex;
   flex-direction: row;

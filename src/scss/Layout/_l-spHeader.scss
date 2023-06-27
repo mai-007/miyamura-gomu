@@ -1,0 +1,32 @@
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+.l-spHeaderNav{
+  display: none;
+  padding: 20px;
+  color: #fff;
+  background: base.$mainColor;
+  transition: 2s;
+  &__list{
+    padding: 10px 0;
+    border-bottom: 0.5px solid #fff;
+    &__item{
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+      &--child{
+        font-size: 0.625rem;
+        font-weight: 200;
+        margin-left: 0.625rem;
+        margin-bottom: 0.625rem;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  &.active{
+    display: block;
+    transition: 2s;
+  }
+}

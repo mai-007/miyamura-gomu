@@ -1,20 +1,37 @@
-@use '../Foundations/f-base' as base;
-@use '../Foundations/f-mixin.scss' as mix;
+@use "../Foundations/f-base" as base;
+@use "../Foundations/f-mixin.scss" as mix;
 
-.c-lowerHeader{
+.c-lowerHeader {
   width: 100%;
   margin-bottom: 32px;
-  background: url('https://placehold.jp/999/ffffff/1920x250.png?text=57');
-  &__inner{
-    padding: 64px 0 ;
+  background: url("../../images/company/headerImage.jpg");
+  background-position: center center;
+  background-size: cover;
+  @include mix.mq(sp) {
+    background: url("../../images/company/headerImage_sp.jpg");
+    background-size: contain;
+    margin-bottom: 0;
+  }
+  &__inner {
+    padding: 64px 0;
     color: #fff;
-    text-shadow: 0 3px 3px rgba(0,0,0,0.1);
-    &__title{
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    @include mix.mq(sp) {
+      padding: 32px 0;
+    }
+    &__title {
       font-size: 3rem;
       margin-bottom: 0.5rem;
+      @include mix.mq(sp) {
+        font-size: 1.125rem;
+        font-weight: 500;
+      }
     }
-    &__subTitle{
+    &__subTitle {
       font-size: 1.5rem;
+      @include mix.mq(sp) {
+        font-size: 0.875rem;
+      }
     }
   }
 }

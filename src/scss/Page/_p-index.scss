@@ -8,6 +8,13 @@
   &__image{
     width: 100%;
     object-fit: contain;
+    @include mix.mq(tab){
+      display: block;
+      img{
+        width: 100vw;
+        height: calc(100vh - 46px);
+      }
+    }
   }
   &__inner{
     position: absolute;
@@ -20,13 +27,16 @@
     margin-bottom: 8px;
     padding: 10px;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: clamp(1rem, 0.4403rem + 2.3881vw, 2.5rem);
     background-color: base.$mainColor;
+    @include mix.mq(sp){
+      font-size: 0.875rem;
+    }
   }
   &__subtext{
     width: fit-content;
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: clamp(0.625rem, 0.2985rem + 1.393vw, 1.5rem);
     color: base.$mainColor;
     background: #fff;
   }
@@ -39,6 +49,9 @@
     color: #fff;
     font-weight: bold;
     font-size: clamp(1.875rem, -1.242rem + 6.25vw, 6.5rem);
+    @include mix.mq(sp){
+      display: none;
+    }
   }
 }
 

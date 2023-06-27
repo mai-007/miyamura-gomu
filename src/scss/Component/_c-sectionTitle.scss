@@ -1,16 +1,24 @@
-@use '../Foundations/f-base.scss' as base;
+@use "../Foundations/f-base.scss" as base;
+@use "../Foundations/f-mixin.scss" as mix;
 
-.c-sectionTitle{
-  font-size: 3rem;
+.c-sectionTitle {
+  font-size: clamp(1.25rem, 0.597rem + 2.7861vw, 3rem);
   margin-bottom: 64px;
   text-align: center;
-  &__accent{
+  @include mix.mq(sp) {
+    margin-bottom: 24px;
+  }
+  &__accent {
     color: base.$mainColor;
   }
-  &--small{
+  &--small {
     @extend .c-sectionTitle;
     font-size: 1.875rem;
+    line-height: 1.5em;
     text-align: left;
     margin-bottom: 40px;
+    @include mix.mq(sp) {
+      font-size: 1.25rem;
+    }
   }
 }

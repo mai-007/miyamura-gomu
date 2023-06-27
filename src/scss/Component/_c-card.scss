@@ -1,13 +1,46 @@
 @use '../Foundations/f-base' as base;
 @use '../Foundations/f-mixin.scss' as mix;
 
+.c-cardWrap{
+  display: flex;
+  justify-content: space-between;
+  @include mix.mq(sp){
+    flex-direction: column;
+  }
+}
 .c-card{
   @include mix.flexColumn;
   max-width: calc(50% - 60px);
+  &--three{
+    max-width: calc(30% - 60px);
+    @include mix.mq(sp){
+      max-width: unset;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+  @include mix.mq(pc){
+    width: calc(50% - 24px);
+    margin-bottom: 56px;
+  }
+  @include mix.mq(sp){
+    display: block;
+    max-width: unset;
+    width: 100%;
+    margin-bottom: 56px;
+  }
   &__image{
+    display: block;
     margin-bottom: 32px;
+    @include mix.mq(pc){
+      width: 100%;
+      margin-bottom: 1rem;
+    }
   }
   &__text{
     margin-bottom: 40px;
+    @include mix.mq(sp){
+      font-size: 0.625rem;
+    }
   }
 }

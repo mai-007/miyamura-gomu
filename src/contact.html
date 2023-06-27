@@ -1,41 +1,100 @@
-{{>head title="お問合せ 入力画面 | ベルトコンベヤと廃ゴムリサイクルの宮村ゴム工業"}}
+{{>head title="お問い合わせ | ベルトコンベヤと廃ゴムリサイクルの宮村ゴム工業"}}
 <body>
   <!-- header.htmlの読み込み -->
   {{> header}}
 
-    <!-- news -->
-    <section class="p-news l-section01">
-      <div class="l-container--s">
-        <h3 class="c-sectionTitle"><span class="c-sectionTitle__accent">N</span>EWS</h3>
-        <ul class="c-list">
-          <li class="c-list__item">
-            <a class="c-list__item__inner" href="#">
-              <dl>
-                <dt class="c-date">2011.12.26</dt>
-                <dd class="c-text">沖縄にて20年祝賀会を催しました。</dd>
-              </dl>
-            </a>
-          </li>
-          <li class="c-list__item">
-            <a class="c-list__item__inner" href="#">
-              <dl>
-                <dt class="c-date">2022.11.01</dt>
-                <dd class="c-text">ホームページをリニューアル致しました。</dd>
-              </dl>
-            </a>
-          </li>
-          <li class="c-list__item">
-            <a class="c-list__item__inner" href="#">
-              <dl>
-                <dt class="c-date">2022.09.30</dt>
-                <dd class="c-text">タイトルテキストが入ります。</dd>
-              </dl>
-            </a>
-          </li>
-        </ul>
-        {{>button--more path="#"}}
-      </div>
-    </section>
+    <!-- lowerHeader -->
+    {{>lowerHeader title="お問い合わせ" subTitle="Recruit"}}
+    <main class="p-lowerPage l-container p-recruit">
+      {{> breadcrumbs pageTitle_01="お問い合わせ"}}
+      <section class="p-lowerPage__section">
+        <section class="p-lowerPage__section__inner">
+          <h3 class="c-sectionTitle--small"><span class="c-sectionTitle__accent">メ</span>ッセージ</h3>
+          <div class="l-container--1300">
+            <p class="u-textCenter u-mb40">下記フォームより必要項目を記入の上、お問い合わせ内容を送信下さい。担当の者がメールにて承ります。</p>
+            <form  class="p-contact" action="">
+              <div class="p-contact__section">
+                <div class="p-contact__section__left">
+                  <label class="p-contact__label" for="name">お名前</label>
+                  <span class="c-inputHint--required">必須</span>
+                </div>
+                <div class="p-contact__section__right">
+                  <input class="p-contact__input u-fitContent" for="name" type="text" id="name" max-length="36" autofocus value>
+                  <span class="c-inputHint--character">例：宮本 太郎</span>
+                </div>
+              </div>
+              <div class="p-contact__section">
+                <div class="p-contact__section__left">
+                  <label class="p-contact__label" for="companyName">会社名</label>
+                  <span class="c-inputHint--any">任意</span>
+                </div>
+                <div class="p-contact__section__right">
+                  <input class="p-contact__input" for="companyName" type="text" id="companyName">
+                  <span class="c-inputHint--character">例：株式会社宮本ゴム工業</span>
+                </div>
+              </div>
+              <div class="p-contact__section">
+                <div class="p-contact__section__left">
+                  <label class="p-contact__label" for="address">ご住所</label>
+                  <span class="c-inputHint--required">必須</span>
+                </div>
+                <div class="p-contact__section__right">
+                  <span class="c-inputHint--character--top">郵便番号</span>
+                  <input class="p-contact__input u-fitContent u-mb10" type="number" id="address" max-length="8">
+                  <span class="c-inputHint--character--top">都道府県</span>
+                  <input class="p-contact__input u-mb10" name="prefectures" id="prefectures" type="text">
+                  <span class="c-inputHint--character--top">市区町村</span>
+                  <input class="p-contact__input u-mb10" name="municipalities" id="municipalities" type="text">
+                  <span class="c-inputHint--character--top">丁目番地</span>
+                  <input class="p-contact__input" name="streetAddress" id="streetAddress" type="text">
+                </div>
+              </div>
+              <div class="p-contact__section">
+                <div class="p-contact__section__left">
+                  <label class="p-contact__label" for="tel">電話番号</label>
+                  <span class="c-inputHint--required">必須</span>
+                </div>
+                <div class="p-contact__section__right">
+                  <input class="p-contact__input u-fitContent" type="number" id="tel" max-length="13">
+                  <span class="c-inputHint--character">例:095-000-0000</span>
+                </div>
+              </div>
+              <div class="p-contact__section">
+                <div class="p-contact__section__left">
+                  <label class="p-contact__label" for="fax">FAX</label>
+                  <span class="c-inputHint--any">任意</span>
+                </div>
+                <div class="p-contact__section__right">
+                  <input class="p-contact__input u-fitContent" max-length="13" type="number" id="fax">
+                  <span class="c-inputHint--character">例:095-000-0000</span>
+                </div>
+              </div>
+              <div class="p-contact__section">
+                <div class="p-contact__section__left">
+                  <label class="p-contact__label" for="mail">メールアドレス</label>
+                  <span class="c-inputHint--required">必須</span>
+                </div>
+                <div class="p-contact__section__right">
+                  <input class="p-contact__input" type="mail" id="mail">
+                  <span class="c-inputHint--character">例:miyamura@miyamuragomu.co.jp</span>
+                </div>
+              </div>
+
+              <div class="p-contact__section">
+                <div class="p-contact__section__left">
+                  <label class="p-contact__label" for="inquiry">お問い合わせ内容</label>
+                  <span class="c-inputHint--required">必須</span>
+                </div>
+                <div class="p-contact__section__right">
+                  <textarea class="p-contact__textarea" rows="8" id="textarea"></textarea>
+                </div>
+              </div>
+              <div class="p-contact__submit"><img src="./images/common/icon/mail.svg">確認画面</div>
+            </form>
+          </div>
+        </section>
+      </section>
+    </main>
     {{>company}}
     {{>recruitBanner}}
     {{>contact}}

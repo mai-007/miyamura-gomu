@@ -3,39 +3,162 @@
   <!-- header.htmlの読み込み -->
   {{> header}}
 
-    <!-- news -->
-    <section class="p-news l-section01">
-      <div class="l-container--s">
-        <h3 class="c-sectionTitle"><span class="c-sectionTitle__accent">N</span>EWS</h3>
-        <ul class="c-list">
-          <li class="c-list__item">
-            <a class="c-list__item__inner" href="#">
-              <dl>
-                <dt class="c-date">2011.12.26</dt>
-                <dd class="c-text">沖縄にて20年祝賀会を催しました。</dd>
-              </dl>
-            </a>
-          </li>
-          <li class="c-list__item">
-            <a class="c-list__item__inner" href="#">
-              <dl>
-                <dt class="c-date">2022.11.01</dt>
-                <dd class="c-text">ホームページをリニューアル致しました。</dd>
-              </dl>
-            </a>
-          </li>
-          <li class="c-list__item">
-            <a class="c-list__item__inner" href="#">
-              <dl>
-                <dt class="c-date">2022.09.30</dt>
-                <dd class="c-text">タイトルテキストが入ります。</dd>
-              </dl>
-            </a>
-          </li>
-        </ul>
-        {{>button--more path="#"}}
-      </div>
+    <!-- lowerHeader -->
+    {{>lowerHeader title="採用情報" subTitle="Recruit"}}
+    <main class="p-lowerPage l-container p-recruit">
+      {{> breadcrumbs pageTitle_01="採用情報"}}
+      <section class="p-lowerPage__section">
+        <section id="recruit_message" class="p-lowerPage__section__inner">
+          <h3 class="c-sectionTitle--small"><span class="c-sectionTitle__accent">メ</span>ッセージ</h3>
+          <div class="l-container--1300">
+            <p>メッセージが入ります。メッセージが入ります。<br>
+              メッセージが入ります。メッセージが入ります。メッセージが入ります。<br>
+              メッセージが入ります。メッセージが入ります。メッセージが入ります。メッセージが入ります。メッセージが入ります。</p>
+              <p>メッセージが入ります。メッセージが入ります。メッセージが入ります。メッセージが入ります。メッセージが入ります。メッセージが入ります。メッセージが入ります。</p>
+          </div>
+        </section>
+        <section id="recruit_option" class="p-lowerPage__section__inner">
+          <h3 class="c-sectionTitle--small"><span class="c-sectionTitle__accent">福</span>利厚生</h3>
+          <div class="l-container--1300 p-recruitBox">
+              <span class="c-bg--span">随時昇給</span>
+              <span class="c-bg--span">残業手当</span>
+              <span class="c-bg--span">各種報酬金</span>
+              <span class="c-bg--span">営業インセンティブ</span>
+              <span class="c-bg--span">交通費(3万円迄/月)</span>
+              <span class="c-bg--span">引越手当</span>
+              <span class="c-bg--span">退職金制度</span>
+              <span class="c-bg--span">結婚祝金</span>
+              <span class="c-bg--span">出産祝金</span>
+              <span class="c-bg--span">誕生日祝金</span>
+          </div>
+        </section>
+        <section id="recruit_study" class="p-lowerPage__section__inner">
+          <h3 class="c-sectionTitle--small"><span class="c-sectionTitle__accent">教</span>育・研修制度</h3>
+          <div class="l-container--1300">
+              <div class="c-bg--box">
+                <h4 class="c-leftBorder">書籍購入補助</h4>
+                <p>業務に関する情報収集、スキルアップに活用が出来ます。</p>
+              </div>
+              <div class="c-bg--box">
+                <h4 class="c-leftBorder">社内イベント</h4>
+                <p>お花見やBBQ、クルージングなどの社内イベントを開催しています。
+                  参加希望制で、家族での参加も可能です。社員同士の親睦を深める機会になっています。</p>
+              </div>
+              <div class="c-bg--box">
+                <h4 class="c-leftBorder">健康診断</h4>
+                <p>年に1度、健康診断を実施しています。社員の健康を第一に考えています。</p>
+              </div>
+              <div class="c-bg--box">
+                <h4 class="c-leftBorder">オフィスファミマ</h4>
+                <p>オフィス内でスナック等の軽食の購入が可能です。小腹がすいた時等、自由に買う事が出来ます。</p>
+              </div>
+              <div class="c-bg--box">
+                <h4 class="c-leftBorder">コーヒー無料</h4>
+                <p>ホットもアイスも無料で自由にお飲みいただけます。ちょっとしたリフレッシュにご活用ください。</p>
+              </div>
+              <div class="c-bg--box">
+                <h4 class="c-leftBorder">社内相談窓口</h4>
+                <p>本社人事による相談窓口があります。チームメンバー以外に相談したいときなど、ご活用ください。</p>
+              </div>
+              <div class="c-bg--box">
+                <h4 class="c-leftBorder">社内研修制度</h4>
+                <p>大手セミナー会社と契約。参加回数の制限はありません。通常業務とは別の側面からの成長が可能です。</p>
+              </div>
+          </div>
+        </section>
+      </section>
+      <section id="recruit_vioce" class="p-lowerPage__section__inner">
+        <h3 class="c-sectionTitle--small"><span class="c-sectionTitle__accent">先</span>輩の声</h3>
+        <div class="l-container--1300 p-recruitVoice">
+          <img class="p-recruitVoice__image" src="https://placehold.jp/999/ffffff/230x300.png?text=60" alt="">
+          <div class="p-recruitVoice__inner">
+            <p class="u-fwBold">Y・M</p>
+            <p>長崎 営業部 部長</p>
+            <p>入社20年</p>
+            <p class="c-borderTitle--blue">Mさんにとって営業とは？</p>
+            <p>クライアント様の発展になくてはならない存在と思っています。
+              私たちが妥協せず結果を持ってくる。この自信と実績が経営者の方から評価されているから宮村ゴムは成長しているんだと思っています。</p>
+          </div>
+        </div>
+        <div class="l-container--1300 p-recruitVoice">
+          <div class="p-recruitVoice__inner">
+            <p class="u-fwBold">Y・M</p>
+            <p>長崎 営業部 部長</p>
+            <p>入社20年</p>
+            <p class="c-borderTitle--blue">Mさんにとって営業とは？</p>
+            <p>クライアント様の発展になくてはならない存在と思っています。
+                私たちが妥協せず結果を持ってくる。この自信と実績が経営者の方から評価されているから宮村ゴムは成長しているんだと思っています。</p>
+          </div>
+          <img  class="p-recruitVoice__image" src="https://placehold.jp/999/ffffff/230x300.png?text=60" alt="">
+        </div>
+        <div class="l-container--1300 p-recruitVoice">
+          <img class="p-recruitVoice__image" src="https://placehold.jp/999/ffffff/230x300.png?text=60" alt="">
+          <div class="p-recruitVoice__inner">
+            <p class="u-fwBold">Y・M</p>
+            <p>長崎 営業部 部長</p>
+            <p>入社20年</p>
+            <p class="c-borderTitle--blue">Mさんにとって営業とは？</p>
+            <p>クライアント様の発展になくてはならない存在と思っています。
+              私たちが妥協せず結果を持ってくる。この自信と実績が経営者の方から評価されているから宮村ゴムは成長しているんだと思っています。</p>
+          </div>
+        </div>
+      </section>
+      <section id="recruit_summary" class="p-lowerPage__section__inner">
+        <h3 class="c-sectionTitle--small"><span class="c-sectionTitle__accent">求</span>人概要</h3>
+        <div class="p-recruit__table">
+          <table class="c-table l-container--1300">
+            <thead>
+              <tr>
+                <th scope="col">支社</th>
+                <th scope="col">住所</th>
+                <th scope="col">職種</th>
+                <th scope="col">募集の有無</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">本社</th>
+                <td>〒851-1132 長崎市小江原1-5-12</td>
+                <td>法人営業</td>
+                <td>募集終了</td>
+              </tr>
+              <tr>
+                <th scope="row">長崎営業所</th>
+                <td>〒851-1133 長崎市小江町2734-46</td>
+                <td>一般事務</td>
+                <td>募集あり</td>
+              </tr>
+              <tr>
+                <th scope="row">佐世保営業所</th>
+                <td>〒859-3166 佐世保市木原町817-1</td>
+                <td>経理</td>
+                <td>募集終了</td>
+              </tr>
+              <tr>
+                <th scope="row">松浦営業所</th>
+                <td>〒857-2532 西海市大瀬戸町松島外郷字松並3456</td>
+                <td>法人営業</td>
+                <td>募集あり</td>
+              </tr>
+              <tr>
+                <th scope="row">本社</th>
+                <td>〒851-1132 長崎市小江原1-5-12</td>
+                <td>法人営業</td>
+                <td>募集あり</td>
+              </tr>
+              <tr>
+                <th scope="row">本社</th>
+                <td>〒851-1132 長崎市小江原1-5-12</td>
+                <td>法人営業</td>
+                <td>募集終了</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </section>
     </section>
+    </main>
     {{>company}}
     {{>recruitBanner}}
     {{>contact}}

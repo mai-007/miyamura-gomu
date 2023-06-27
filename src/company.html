@@ -7,8 +7,19 @@
     {{>lowerHeader title="会社案内" subTitle="Other business"}}
     <main class="p-company p-lowerPage l-container">
       {{> breadcrumbs pageTitle_01="会社案内"}}
+
+      <nav area-labelledby="company-navigation" class="c-tabNavigation l-container">
+        <ul class="c-tabNavigation__inner">
+          <li class="c-tabNavigation__inner__item active">ご挨拶</li>
+          <li class="c-tabNavigation__inner__item">会社概要</li>
+          <li class="c-tabNavigation__inner__item">沿革</li>
+          <li class="c-tabNavigation__inner__item">施工・導入実績</li>
+        </ul>
+      </nav>
+
       <section class="p-lowerPage__section">
-        <section class="p-lowerPage__section__inner">
+        <!-- ご挨拶 -->
+        <section id="companyGreeting" class="p-lowerPage__section__inner js-tab-item show">
           <h3 class="c-sectionTitle--small u-mb40"><span class="c-sectionTitle__accent">ご</span>挨拶</h3>
             <figure class="p-greetingImage">
               <img
@@ -28,8 +39,8 @@
             </div>
         </section>
         <!-- 会社概要 -->
-        <section>
-          <section class="p-lowerPage__section__inner">
+        <section class="js-tab-item">
+          <section id="companySummary" class="p-lowerPage__section__inner u-mb90">
             <h3 class="c-sectionTitle--small u-mb40"><span class="c-sectionTitle__accent">会</span>社概要</h3>
               <ul class="l-container--m c-list02">
                 <li class="c-list02__item">
@@ -104,9 +115,10 @@
                     長崎県　番号　4200101610号<br>長崎県　番号　4200101610号
                   </li>
                 </ul>
+          </section>
         </section>
         <!-- 会社沿革 -->
-        <section class="p-lowerPage__section__inner">
+        <section id="companyHistory" class="p-lowerPage__section__inner js-tab-item">
           <h3 class="c-sectionTitle--small u-mb40"><span class="c-sectionTitle__accent">会</span>社の沿革</h3>
             <ul class="l-container--m c-list02">
               <li class="c-list02__item">
@@ -188,11 +200,37 @@
             </div>
         </section>
         <!-- 加工・導入実績 -->
-        <section class="p-lowerPage__section__inner">
+        <section id="companyRecord" class="p-lowerPage__section__inner js-tab-item">
           <h3 class="c-sectionTitle--small u-mb40"><span class="c-sectionTitle__accent">施</span>工・導入実績</h3>
-          <div class="l-flexRowToColumn">
-            <img class="" src="https://placehold.jp/999/ffffff/670x398.png?text=55" alt="">
+          <div class="l-flex u-mb40 u-sp_flex-spaceBetween">
+            <img class="c-image--twocolumn" src="https://placehold.jp/999/ffffff/670x398.png?text=55" alt="">
+            <img class="c-image--twocolumn" src="https://placehold.jp/999/ffffff/670x398.png?text=56" alt="">
           </div>
+          <ul class="c-listColumn">
+            <li class="c-listColumn__list">・官公庁</li>
+            <li class="c-listColumn__list">・醤油・味噌製造工場</li>
+            <li class="c-listColumn__list">・火力発電所</li>
+            <li class="c-listColumn__list">・米穀工場</li>
+            <li class="c-listColumn__list">・原子力発電所</li>
+            <li class="c-listColumn__list">・製塩工場</li>
+            <li class="c-listColumn__list">・ゴミ焼却場</li>
+            <li class="c-listColumn__list">・クリーニング工場</li>
+            <li class="c-listColumn__list">・リサイクルセンター</li>
+            <li class="c-listColumn__list">・砂採取船</li>
+            <li class="c-listColumn__list">・砕石場</li>
+            <li class="c-listColumn__list">・ゴルフ場</li>
+            <li class="c-listColumn__list">・生コン工場</li>
+            <li class="c-listColumn__list">・ゴルフ練習場</li>
+            <li class="c-listColumn__list">・アスファルト工場</li>
+            <li class="c-listColumn__list">・バッティングセンター</li>
+            <li class="c-listColumn__list">・コンクリート2次製品工場</li>
+            <li class="c-listColumn__list">・堆肥製造工場</li>
+            <li class="c-listColumn__list">・宅配配送センター</li>
+            <li class="c-listColumn__list">・飼料製造工場</li>
+            <li class="c-listColumn__list">・セラミック製品工場</li>
+            <li class="c-listColumn__list u-mr0">・その他工場や搬送施設全般</li>
+            <li class="c-listColumn__list u-mr0">・水産物加工品工場</li>
+          </ul>
         </section>
       </section>
     </main>

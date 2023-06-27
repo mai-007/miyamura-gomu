@@ -1,0 +1,17 @@
+@use "../Foundations/f-base" as base;
+@use "../Foundations/f-mixin.scss" as mix;
+
+.c-leftBorder {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  letter-spacing: 0.03em;
+  &::before{
+    content: '';
+    padding-left: 8px;
+    border-left: 3px solid base.$mainColor;
+  }
+  @include mix.mq(sp) {
+    font-size: 16px;
+  }
+}

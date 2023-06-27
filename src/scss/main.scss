@@ -7,6 +7,7 @@
 @use "Layout/l-container";
 @use "Layout/l-flex";
 @use "Layout/l-header";
+@use "Layout/l-spHeader";
 @use "Layout/l-footer";
 
 @use "Component/c-logo";
@@ -29,10 +30,18 @@
 @use "Component/c-listRow";
 @use "Component/c-figure";
 @use "Component/c-lineText";
+@use "Component/c-tabNavigation";
+@use "Component/c-table";
+@use "Component/c-bg";
+@use "Component/c-inputHint";
+@use "Component/c-hamburger";
+@use "Component/c-leftBorder";
 
 @use "Page/p-index";
 @use "Page/p-news";
 @use "Page/p-lowerPage";
 @use "Page/p-company";
+@use "Page/p-recruit";
+@use "Page/p-contact";
 
 @use "Utility/u-utility";

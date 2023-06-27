@@ -4,6 +4,9 @@
 /* footerNav */
 .l-footerNav{
   width: 100%;
+  @include mix.mq(1000){
+    display: none;
+  }
   &__inner{
     @include mix.flexRowCenter;
     justify-content: center;
@@ -33,6 +36,12 @@
   background: base.$mainColor;
   padding: 70px 40px;
   color: #fff;
+  @include mix.mq(pc){
+    padding: 70px 16px;
+  }
+  @include mix.mq(sp){
+    padding: 18px 16px;
+  }
   &__inner{
     @include mix.flexRowToColumn;
     justify-content: flex-start;
@@ -42,6 +51,21 @@
     .c-logo{
       padding-left: 0;
       margin-bottom: 60px;
+      @include mix.mq(sp){
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      img{
+        @include mix.mq(sp){
+          width: 80px;
+          height: auto;
+        }
+      }
+    }
+    @include mix.mq(sp){
+      margin-right: 0;
     }
   }
   &__copyright{
@@ -51,4 +75,12 @@
     display: block;
     width: fit-content;
   }
+}
+
+/* bg */
+.l-footer__bgImage{
+  position: absolute;
+  right: 0;
+  bottom: 54px;
+  width: calc(100% - 30%);
 }

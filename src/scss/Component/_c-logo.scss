@@ -1,13 +1,22 @@
 @use '../Foundations/f-mixin.scss' as mix;
 
 .c-logo{
-  @include mix.flexRowCenter;
   padding-left: 2.5rem;
   color: #fff;
-  font-weight: bold;
-  font-size: 1.875rem;
+  @include mix.mq(pc){
+    padding-left: 1.875rem;
+  }
+  @include mix.mq(tab){
+    padding-left: 0;
+  }
+  a{
+    font-weight: bold;
+    font-size: clamp(0.875rem, 0.5019rem + 1.592vw, 1.875rem);
+    word-break: keep-all;
+    @include mix.flexRowCenter;
+  }
   img{
-    max-width: 86px;
-    padding-right: 1.25rem;
+    width: clamp(2.25rem, 1.084rem + 4.9751vw, 5.375rem);
+    padding-right: 0.75rem;
   }
 }

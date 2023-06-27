@@ -1,18 +1,38 @@
-@use '../Foundations/f-base.scss' as base;
+@use "../Foundations/f-base.scss" as base;
+@use "../Foundations/f-mixin.scss" as mix;
 
-.c-borderTitle{
-  &__section{
+.c-borderTitle {
+  line-height: 1.5em;
+  &__section {
     margin-bottom: 50px;
   }
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  &::before{
+  @include mix.mq(sp) {
+    font-size: 0.825rem;
+  }
+  & + p {
+    font-size: 0.875rem;
+    font-weight: 300;
+    @include mix.mq(sp) {
+      font-size: 0.625rem;
+    }
+  }
+  &::before {
     display: inline-block;
     content: "";
     width: 50px;
     border: 1px solid #000;
     margin-right: 1.25rem;
     vertical-align: middle;
+  }
+  &--blue {
+    @extend .c-borderTitle;
+    &::before {
+      border: 1px solid base.$mainColor;
+      width: 20px;
+      margin-right: 8px;
+    }
   }
 }

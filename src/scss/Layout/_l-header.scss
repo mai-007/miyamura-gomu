@@ -6,17 +6,32 @@
   justify-content: space-between;
   padding: 10px 0;
   background: base.$mainColor;
+  @include mix.mq(tab){
+    padding: 10px 16px;
+  }
 }
 
 .l-headerNav{
   font-weight: 500;
   color: #fff;
   @include mix.flexRowCenter;
+  @include mix.mq(tab){
+    display: none;
+  }
   ul{
     @include mix.flexRowCenter;
   }
   &__li{
+    font-size: clamp(0.875rem, 0.8284rem + 0.199vw, 1rem);
     padding-right: 2.4rem;
+    cursor: pointer;
+    @include mix.mq(pc){
+      padding-right: 1.2rem;
+    }
+    @include mix.mq(1000){
+      font-size: 12px;
+      padding-right: 0.8rem;
+    }
   }
 }
 
@@ -24,14 +39,20 @@
   width: 80px;
   height: 80px;
   border: 1px solid #fff;
-  &:hover{
-    color: base.$mainColor;
-    background: #fff;
+  @include mix.mq(1000){
+    transform: scale(0.8);
   }
   &__inner{
     @include mix.flexColumn;
     width: 100%;
     height: 100%;
+    &:hover{
+      color: base.$mainColor;
+      background: #fff;
+      svg path{
+        fill: base.$mainColor;
+      }
+    }
     &__text{
       padding-bottom: 10px;
       font-size: 12px;

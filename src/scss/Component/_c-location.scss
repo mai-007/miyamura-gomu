@@ -4,6 +4,10 @@
 
 .c-location{
   line-height: 1.5em;
+  @include mix.mq(sp){
+    font-size: 0.625rem;
+    padding-bottom: 56px;
+  }
   &__place{
     display: inline-block;
     margin-bottom: 18px;

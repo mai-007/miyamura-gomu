@@ -1,0 +1,27 @@
+@use '../Foundations/f-base' as base;
+
+.c-inputHint{
+  font-size: 0.75rem;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  &--required{
+    @extend .c-inputHint;
+    background: base.$red;
+  }
+  &--any{
+    @extend .c-inputHint;
+    background: base.$blue;
+  }
+  &--character{
+    display: block;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    color: base.$gray01;
+    &--top{
+      @extend .c-inputHint--character;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

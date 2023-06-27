@@ -1,48 +1,96 @@
+@use "../Foundations/f-mixin.scss" as mix;
+
 /* Utility */
 
+/* mq */
+.u-pc {
+  display: block;
+  @include mix.mq(sp) {
+    display: none;
+  }
+}
+.u-sp {
+  display: none;
+  @include mix.mq(sp) {
+    display: block;
+  }
+}
 /* margin */
-.u-mt40{
+.u-mt40 {
   margin-top: 40px;
 }
-.u-mb8{
+/*-----------------*/
+.u-mr0 {
+  margin-right: 0;
+}
+/*-----------------*/
+.u-mb8 {
   margin-bottom: 8px;
 }
-.u-mb10{
+.u-mb10 {
   margin-bottom: 10px;
 }
-.u-mb15{
+.u-mb15 {
   margin-bottom: 15px;
 }
-.u-mb40{
+.u-mb24 {
+  margin-bottom: 24px;
+}
+.u-mb40 {
   margin-bottom: 40px;
 }
-.u-mb60{
+.u-mb60 {
   margin-bottom: 60px;
 }
+.u-mb90 {
+  margin-bottom: 90px;
+}
 
+/* margin 　sp only*/
+.u-sp_mb24 {
+  @include mix.mq(sp) {
+    margin-bottom: 24px;
+  }
+}
 /* flex */
-.u-alignCenter{
+.u-alignCenter {
   align-items: center;
 }
-.u-justifyCenter{
+.u-justifyCenter {
   justify-content: center;
 }
-.u-flexStart{
+.u-flexStart {
   align-items: flex-start;
+}
+.u-sp_flex-spaceBetween {
+  @include mix.mq(sp) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* width */
+.u-fitContent {
+  width: fit-content;
 }
 
 /* height */
-.u-heightAuto{
+.u-heightAuto {
   height: auto;
 }
 
 /* font-size */
-.u-fz18{
+.u-fz18 {
   font-size: 1.125rem;
 }
-.u-fz26{
+.u-fz26 {
   font-size: 1.625rem;
 }
-.u-fz48{
+.u-fz48 {
   font-size: 3rem;
+}
+
+/* text-align */
+.u-textCenter {
+  text-align: center;
 }

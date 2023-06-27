@@ -3,10 +3,31 @@
 
 .c-company{
   background: base.$bg01;
+  @include mix.mq(sp){
+    padding-bottom: 0px;
+  }
+  &Wrap{
+    max-width: 1380px;
+    margin: 0 auto;
+    @include mix.mq(pc){
+      width: 90%;
+    }
+    @include mix.mq(sp){
+      width: 100%;
+      flex-direction: row;
+    }
+  }
   &__item{
     position: relative;
     width: calc(50% - 60px);
     margin-bottom: 60px;
+    cursor: pointer;
+    @include mix.mq(1000){
+      width: calc(50% - 24px);
+    }
+    @include mix.mq(sp){
+      width: calc(50% - 10px);
+    }
     &__title{
       position: absolute;
       top:0;
@@ -15,8 +36,14 @@
       width: min(76.5385%,398px);
       height: 95px;
       background: base.$mainColor;
-      font-size: 2rem;
+      font-size: clamp(0.625rem, 0.0653rem + 2.3881vw, 2.125rem);
       color: #fff;
+      @include mix.mq(1000){
+        height: 80px;
+      }
+      @include mix.mq(sp){
+        height: 34px;
+      }
     }
   }
 }

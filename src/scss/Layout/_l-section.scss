@@ -1,5 +1,9 @@
+@use '../Foundations/f-mixin.scss' as mix;
 
 /* section */
 .l-section01{
   padding: 120px 0 200px;
+  @include mix.mq(sp){
+    padding: 48px 0 68px;
+  }
 }

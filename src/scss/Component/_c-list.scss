@@ -23,9 +23,18 @@
       color: base.$gray01;
       font-weight: normal;
       margin-right: 30px;
+      @include mix.mq(sp){
+        font-size: 0.625rem;
+        margin-bottom: 0.5rem;
+      }
     }
     .c-text{
       display: inline-block;
+      @include mix.mq(sp){
+        font-size: 0.875rem;
+        margin-left: 1rem;
+        display: block;
+      }
     }
   }
 }

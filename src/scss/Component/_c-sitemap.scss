@@ -4,8 +4,17 @@
 .c-sitemap{
   @include mix.flexRowToColumn;
   justify-content: flex-start;
+  @include mix.mq(1000){
+    display: none;
+  }
   &__unity{
     margin-right: 104px;
+    @include mix.mq(pc){
+      margin-right: 30px;
+      &:last-of-type{
+        margin-right: 0;
+      }
+    }
     &__item{
       @include mix.flexColumn;
       margin-bottom: 50px;

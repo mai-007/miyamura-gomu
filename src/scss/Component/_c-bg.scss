@@ -1,0 +1,24 @@
+@use '../Foundations/f-base' as base;
+@use '../Foundations/f-mixin.scss' as mix;
+
+.c-bg{
+  background: base.$blueGray;
+  &--span{
+    @extend .c-bg;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 1.125rem;
+    text-align: center;
+    @include mix.mq(sp) {
+      font-size: 14px;
+    }
+  }
+  &--box{
+    @extend .c-bg;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+}

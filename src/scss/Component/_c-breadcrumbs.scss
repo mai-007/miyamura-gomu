@@ -1,28 +1,42 @@
-@use '../Foundations/f-base' as base;
-@use '../Foundations/f-mixin.scss' as mix;
+@use "../Foundations/f-base" as base;
+@use "../Foundations/f-mixin.scss" as mix;
 
-.c-breadcrumbs{
+.c-breadcrumbs {
   @include mix.flexRowCenter;
   margin-bottom: 60px;
-  &__list{
+  @include mix.mq(sp) {
+    font-size: 0.5rem;
+    word-break: keep-all;
+    margin-bottom: 40px;
+  }
+  &__list {
     margin-right: 24px;
-    &__item{
+    @include mix.mq(sp) {
+      margin-right: 0.5rem;
+    }
+    &__item {
       @include mix.flexRowCenter;
-      &::after{
+      &::after {
         content: "\03e";
         padding-left: 24px;
+        @include mix.mq(sp) {
+          padding-left: 0.5rem;
+        }
       }
     }
     /* 余分な > を削除 */
-    &:last-of-type{
-      .c-breadcrumbs__list__item{
-        &::after{
+    &:last-of-type {
+      .c-breadcrumbs__list__item {
+        &::after {
           content: "";
         }
       }
     }
   }
-  &__homeimage{
+  &__homeimage {
     padding-right: 24px;
+    @include mix.mq(sp) {
+      padding-right: 0.5rem;
+    }
   }
 }

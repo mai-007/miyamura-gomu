@@ -5,11 +5,22 @@
 
 .p-lowerPage{
   padding: 64px 0 215px;
+  @include mix.mq(sp){
+    padding: 24px 0 60px;
+  }
   &:last-of-type{
     margin-bottom: 0;
   }
   &__section{
     margin-bottom: 88px;
+    @include mix.mq(sp){
+      margin-bottom: 40px;
+    }
+    &:last-of-type{
+      @include mix.mq(sp){
+        margin-bottom: 0;
+      }
+    }
     &__inner{
       margin-bottom: 50px;
       &:last-of-type{

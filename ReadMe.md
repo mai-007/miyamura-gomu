@@ -14,15 +14,15 @@
   * `npm run build`
 
 # 変数の出力、コンポーネントの読み込み
-プロパティの出力: {{プロパティ名}} 
+プロパティの出力: {{プロパティ名}}
 [出力など基本構文のリファレンス](https://handlebarsjs.com/guide/expressions.html)
 
-コンポーネントの呼び出し: {{> ファイル名（拡張子なし）}} 
+コンポーネントの呼び出し: {{> ファイル名（拡張子なし）}}
 [コンポーネントのリファレンス](https://handlebarsjs.com/guide/partials.html#basic-partials)
 
-条件分岐: {{#if hoge}} {{else}} {{/if}} 
+条件分岐: {{#if hoge}} {{else}} {{/if}}
 [if文のリファレンス](https://handlebarsjs.com/guide/builtin-helpers.html#if)
 
-コメントアウト: {{!コメント}} 
+コメントアウト: {{!コメント}}
 [コメントアウトのリファレンス](https://handlebarsjs.com/guide/#template-comments)
 

@@ -1,21 +1,33 @@
-.l-container{
+@use "../Foundations/f-mixin.scss" as mix;
+
+.l-container {
   max-width: 1380px;
   margin: 0 auto;
-  &--full{
+  @include mix.mq(pc) {
+    width: 90%;
+  }
+  &--full {
     width: 100%;
-    margin: 0 auto;
     position: relative;
   }
-  &--1300{
+  &--1300 {
+    @extend .l-container;
     width: 1300px;
-    margin: 0 auto;
+    @include mix.mq(sp) {
+      width: 100%;
+      margin: 0 auto;
+    }
   }
-  &--m{
+  &--m {
+    @extend .l-container;
     width: 1100px;
-    margin: 0 auto;
   }
-  &--s{
+  &--s {
     width: 980px;
     margin: 0 auto;
+    @include mix.mq(pc) {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 }

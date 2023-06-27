@@ -5,7 +5,11 @@
 
     <!-- mainView -->
     <div class="p-mainView">
-      <img class="p-mainView__image" src="./images/top/mainView.jpg" alt="">
+      <picture class="p-mainView__image">
+        <source srcset="./images/top/mainView_sp.jpg" media="(max-width: 799px)" type="image/jpg">
+        <source srcset="./images/top/mainView.jpg" media="(max-width: 800px)" type="image/jpg">
+        <img src="./images/top/mainView.jpg" alt="">
+      </picture>
       <div class="p-mainView__inner">
         <h2 class="p-mainView__text">株式会社宮村ゴム工業は40年以上の実績を持つ</h2>
         <h2 class="p-mainView__text">ベルトコンベア専門企業です。</h2>
@@ -20,7 +24,7 @@
         <h3 class="c-sectionTitle"><span class="c-sectionTitle__accent">N</span>EWS</h3>
         <ul class="c-list">
           <li class="c-list__item">
-            <a class="c-list__item__inner" href="#">
+            <a class="c-list__item__inner" href="./news.220622.html">
               <dl>
                 <dt class="c-date">2011.12.26</dt>
                 <dd class="c-text">沖縄にて20年祝賀会を催しました。</dd>
@@ -44,7 +48,7 @@
             </a>
           </li>
         </ul>
-        {{>button--more path="#"}}
+        {{>button--more path="./news.html"}}
       </div>
     </section>
 
@@ -54,7 +58,11 @@
       <!-- Belt conveyor -->
       <div class="p-works__section l-container--full">
         <div class="c-contentsMv">
-          <img class="c-contentsMv__image" src="./images/top/works_mv.jpg" alt="" />
+          <picture class="c-contentsMv__image">
+            <source srcset="./images/top/works_mv_sp.jpg" media="(max-width: 799px)" type="image/jpg">
+            <source srcset="./images/top/works_mv.jpg" media="(max-width: 800px)" type="image/jpg">
+            <img src="./images/top/works_mv.jpg" alt="" />
+          </picture>
           <div class="c-contentsMv__box">
             <div>
               <h4 class="c-contentsMv__box__subTitle--en">Belt conveyor business</h4>
@@ -65,12 +73,20 @@
 
         <div class="l-container l-flexRowToColumn">
           <div class="c-card">
-            <img class="c-card__image" src="./images/top/works_01.jpg" alt="" />
+            <picture class="c-card__image">
+              <source srcset="./images/top/works_01_sp.jpg" media="(max-width: 799px)" type="image/jpg">
+              <source srcset="./images/top/works_01.jpg" media="(max-width: 800px)" type="image/jpg">
+              <img src="./images/top/works_01.jpg" alt="">
+            </picture>
             <p class="c-card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             {{>button--more path="#"}}
           </div>
           <div class="c-card">
-            <img class="c-card__image" src="./images/top/works_02.jpg" alt="" />
+            <picture class="c-card__image">
+              <source srcset="./images/top/works_02_sp.jpg" media="(max-width: 799px)" type="image/jpg">
+              <source srcset="./images/top/works_02.jpg" media="(max-width: 800px)" type="image/jpg">
+              <img src="./images/top/works_02.jpg" alt="">
+            </picture>
             <p class="c-card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             {{>button--more path="#"}}
           </div>
@@ -79,7 +95,11 @@
       <!-- Recycling -->
       <div class="p-works__section l-container--full">
         <div class="c-contentsMv">
-          <img class="c-contentsMv__image" src="./images/top/recycle_mv.jpg" alt="" />
+          <picture class="c-contentsMv__image">
+            <source srcset="./images/top/recycle_mv_sp.jpg" media="(max-width: 799px)" type="image/jpg">
+            <source srcset="./images/top/recycle_mv.jpg" media="(max-width: 800px)" type="image/jpg">
+            <img src="./images/top/recycle_mv.jpg" alt="" />
+          </picture>
           <div class="c-contentsMv__image">
             <div class="c-contentsMv__box">
               <div>
@@ -90,19 +110,31 @@
           </div>
         </div>
 
-        <div class="l-container l-flexRowToColumn">
-          <div class="c-card">
-            <img class="c-card__image" src="./images/top/recycle_01.jpg" alt="" />
+        <div class="l-container c-cardWrap">
+          <div class="c-card--three">
+            <picture class="c-card__image">
+              <source srcset="./images/top/recycle_01_sp.jpg" media="(max-width: 799px)" type="image/jpg">
+              <source srcset="./images/top/recycle_01.jpg" media="(max-width: 800px)" type="image/jpg">
+              <img src="./images/top/recycle_01.jpg" alt="">
+            </picture>
             <p class="c-card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             {{>button--more path="#"}}
           </div>
-          <div class="c-card">
-            <img class="c-card__image" src="./images/top/recycle_02.jpg" alt="" />
+          <div class="c-card--three">
+            <picture class="c-card__image">
+              <source srcset="./images/top/recycle_02_sp.jpg" media="(max-width: 799px)" type="image/jpg">
+              <source srcset="./images/top/recycle_02.jpg" media="(max-width: 800px)" type="image/jpg">
+              <img src="./images/top/recycle_02.jpg" alt="">
+            </picture>
             <p class="c-card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             {{>button--more path="#"}}
           </div>
-          <div class="c-card">
-            <img class="c-card__image" src="./images/top/recycle_03.jpg" alt="" />
+          <div class="c-card--three">
+            <picture class="c-card__image">
+              <source srcset="./images/top/recycle_03_sp.jpg" media="(max-width: 799px)" type="image/jpg">
+              <source srcset="./images/top/recycle_03.jpg" media="(max-width: 800px)" type="image/jpg">
+              <img src="./images/top/recycle_02.jpg" alt="">
+            </picture>
             <p class="c-card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             {{>button--more path="#"}}
           </div>
@@ -112,7 +144,11 @@
       <!-- Other -->
       <div class="p-works__section  l-container--full">
         <div class="c-contentsMv">
-          <img class="c-contentsMv__image" src="./images/top/other_mv.jpg" alt="" />
+          <picture class="c-contentsMv__image">
+            <source srcset="./images/top/other_mv_sp.jpg" media="(max-width: 799px)" type="image/jpg">
+            <source srcset="./images/top/other_mv.jpg" media="(max-width: 800px)" type="image/jpg">
+            <img src="./images/top/other_mv.jpg" alt="" />
+          </picture>
           <div class="c-contentsMv__box">
             <div>
               <h4 class="c-contentsMv__box__subTitle--en">Other business</h4>
@@ -121,19 +157,31 @@
           </div>
         </div>
 
-        <div class="l-container l-flexRowToColumn">
-          <div class="c-card">
-            <img class="c-card__image" src="./images/top/other_01.jpg" alt="" />
+        <div class="l-container c-cardWrap">
+          <div class="c-card--three">
+            <picture class="c-card__image">
+              <source srcset="./images/top/other_01_sp.jpg" media="(max-width: 799px)" type="image/jpg">
+              <source srcset="./images/top/other_01.jpg" media="(max-width: 800px)" type="image/jpg">
+              <img src="./images/top/other_01.jpg" alt="">
+            </picture>
             <p class="c-card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             {{>button--more path="#"}}
           </div>
-          <div class="c-card">
-            <img class="c-card__image" src="./images/top/other_02.jpg" alt="" />
+          <div class="c-card--three">
+            <picture class="c-card__image">
+              <source srcset="./images/top/other_02_sp.jpg" media="(max-width: 799px)" type="image/jpg">
+              <source srcset="./images/top/other_02.jpg" media="(max-width: 800px)" type="image/jpg">
+              <img src="./images/top/other_02.jpg">
+            </picture>
             <p class="c-card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             {{>button--more path="#"}}
           </div>
-          <div class="c-card">
-            <img class="c-card__image" src="./images/top/other_03.jpg" alt="" />
+          <div class="c-card--three">
+            <picture class="c-card__image">
+              <source srcset="./images/top/other_03_sp.jpg" media="(max-width: 799px)" type="image/jpg">
+              <source srcset="./images/top/other_03.jpg" media="(max-width: 800px)" type="image/jpg">
+              <img src="./images/top/other_03.jpg">
+              </picture>
             <p class="c-card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             {{>button--more path="#"}}
           </div>
